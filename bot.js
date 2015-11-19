@@ -1,7 +1,7 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
 
-var botID = process.env.b0c244455c5aed2c47fb32df4bb;
+var botID = BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy$/;
@@ -29,7 +29,7 @@ function postMessage() {
   };
 
   body = {
-    "bot_id" : b0c244455c5aed2c47fb32df4bb,
+    "bot_id" : BOT_ID
     "text" : memes
   };
 
